@@ -20,9 +20,9 @@ from moneyball.features import metric_rank
 from moneyball.plots import radar_rank_plot, bar_rank_plot
 
 sl.set_page_config(
-    page_title="Moneyball",
-    layout="wide",
-    initial_sidebar_state="auto",
+    page_title = "Moneyball App",
+    layout = "wide",
+    initial_sidebar_state = "auto",
 )
 
 

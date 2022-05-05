@@ -5,8 +5,7 @@ from datetime import datetime
 MLB_BASE_URL = "https://baseball-reference.com"
 METRIC_PATH = { 
     "Batting": "/teams/ATL/2022-batting.shtml",
-    "Starting Pitching": "/teams/ATL/2022-pitching.shtml",
-    "Relief Pitching": "/teams/ATL/2022-pitching.shtml",
+    "Pitching": "/teams/ATL/2022-pitching.shtml",
     "Fielding": "/teams/ATL/2022-fielding.shtml",
 }
 # MLB available seasons for data scraping
