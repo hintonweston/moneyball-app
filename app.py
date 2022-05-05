@@ -45,7 +45,7 @@ def mlb_scrape(
 
     metric_type: str
         The type of metric statistics to scrape.
-        Available choices: ["Batting", "Starting Pitching", "Relief Pitching"]
+        Available choices: ["Batting", "Pitching"]
 
     pct_cols: Optional[List[str]], default None
         Columns that have '%' embedded to the numeric values.
@@ -89,7 +89,7 @@ def mlb_scrape(
 def display():
 
     # Sidebar configurations
-    sl.sidebar.write("# MLB Menu")
+    sl.sidebar.write("# Player Menu")
     season = sl.sidebar.selectbox(
         "Season:", list(reversed(range(MIN_YEAR, MAX_YEAR + 1)))
     )
@@ -98,10 +98,6 @@ def display():
     if metric_type == "Starting Pitching":
         all_player_table, stats_avg = mlb_scrape(
             metric_type=metric_type, year=season, pct_cols=["QS%"]
-        )
-    elif metric_type == "Relief Pitching":
-        all_player_table, stats_avg = mlb_scrape(
-            metric_type=metric_type, year=season, pct_cols=["SV%", "IS%"]
         )
     else:
         all_player_table, stats_avg = mlb_scrape(metric_type=metric_type, year=season)

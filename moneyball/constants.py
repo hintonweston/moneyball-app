@@ -2,12 +2,12 @@ from datetime import datetime
 
 
 # Webscrape URL's
-MLB_BASE_URL = "https://baseball-reference.com/teams/ATL/"
+MLB_BASE_URL = "https://baseball-reference.com"
 METRIC_PATH = { 
-    "Batting": "-standard-batting.html",
-    "Starting Pitching": "-starter-pitching.html",
-    "Relief Pitching": "-reliever-pitching.html",
-    "Fielding": "-standard-fielding.html",
+    "Batting": "/teams/ATL/2022-batting.shtml",
+    "Starting Pitching": "/teams/ATL/2022-pitching.shtml",
+    "Relief Pitching": "/teams/ATL/2022-pitching.shtml",
+    "Fielding": "/teams/ATL/2022-fielding.shtml",
 }
 # MLB available seasons for data scraping
 MIN_YEAR = 2012
